@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SquadRenamer</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script type="text/javascript" src="engine.js"></script>
+</head>
+<body>
+	<div class="container" id="buttonShow">
+		<button onclick="javascript:openRenameMenu()">Rename the squad</button>
+	</div>
+
+	<div class="containerShow" id="show">
+		<label for="name">Rename the squad</label>
+		<div class="break" style="height: 20px;"></div>
+		<input type="text" id="name" name="name" required>
+		<div class="break" style="height: 50px;"></div>
+		<button style="display: inline-block;" onclick="javascript:closeRenameMenu()">Close</button>
+		<button style="display: inline-block;" onclick="javascript:apply()">Apply</button>
+	</div>
+</body>
+</html>
